@@ -1,5 +1,7 @@
 # Netlify-cms-github-oauth-provider
 
+Serverless deployment of https://github.com/vencax/netlify-cms-github-oauth-provider
+
 ***External authentication providers were enabled in netlify-cms version 0.4.3. Check your web console to see your netlify-cms version.***
 
 [netlify-cms](https://www.netlifycms.org/) has its own github OAuth client. This implementation was created by reverse engineering the results of that client, so it's not necessary to reimplement client part of [netlify-cms](https://www.netlifycms.org/).
