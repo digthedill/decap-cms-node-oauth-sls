@@ -1,4 +1,5 @@
 require('dotenv').config({ silent: true })
+const serverless = require('serverless-http');
 const express = require('express')
 const middleWarez = require('./index.js')
 const port = process.env.PORT || 3000
@@ -15,6 +16,4 @@ app.get('/callback', middleWarez.callback)
 app.get('/success', middleWarez.success)
 app.get('/', middleWarez.index)
 
-app.listen(port, () => {
-  console.log("Netlify CMS OAuth provider listening on port " + port)
-})
+module.exports.handler = serverless(app)
